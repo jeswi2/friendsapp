@@ -9,6 +9,8 @@ export class AddfriendComponent implements OnInit {
 
   constructor() { }
 
+  
+
   ngOnInit(): void {
   }
 
