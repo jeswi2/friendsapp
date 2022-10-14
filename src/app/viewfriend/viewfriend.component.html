@@ -3,7 +3,9 @@
 <div class="container">
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 xxl-12">
-           
+           <div *ngIf="status then showData else loadingScreen"></div>
+<ng-template #showData>
+  </ng-template>
             <table class="table table-bordered table-striped-columns">
                 <thead>
                   <tr>
@@ -33,6 +35,13 @@
                  
                 </tbody>
               </table>
+              <ng-template #loadingScreen>
+                <div class="spinner-grow" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+            
+            </ng-template>
+          
               </div>
               </div>
               </div>
